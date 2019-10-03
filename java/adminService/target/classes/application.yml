@@ -11,6 +11,8 @@ mybatis:
 spring:
   profiles:
     active:  dev
+  application:
+    name: adminService
 
 #pagehelper
 pagehelper:
