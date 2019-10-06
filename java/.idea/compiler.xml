@@ -8,20 +8,22 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ZuulService" />
         <module name="common" />
-        <module name="adminService" />
         <module name="zipkinService" />
         <module name="kafkaService" />
         <module name="eurekaServcie" />
+        <module name="publicService" />
+        <module name="componentService" />
         <module name="generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="adminService" target="1.8" />
       <module name="common" target="1.8" />
+      <module name="componentService" target="1.8" />
       <module name="eurekaServcie" target="1.8" />
       <module name="generator" target="1.8" />
       <module name="java" target="1.8" />
       <module name="kafkaService" target="1.8" />
+      <module name="publicService" target="1.8" />
       <module name="zipkinService" target="1.8" />
       <module name="ZuulService" target="1.8" />
     </bytecodeTargetLevel>
@@ -29,8 +31,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ZuulService" options="" />
-      <module name="adminService" options="" />
       <module name="common" options="" />
+      <module name="componentService" options="" />
       <module name="eurekaServcie" options="" />
       <module name="generator" options="" />
       <module name="kafkaService" options="" />

@@ -6,14 +6,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @SpringBootApplication
 @EnableZuulProxy
-@RestController
+@Controller
 @EnableFeignClients
 public class ZuulApp {
 
@@ -21,8 +20,29 @@ public class ZuulApp {
     HelloClient client;
 
     @RequestMapping("/")
+    @ResponseBody
     public DiliResult hello() {
         return client.hello();
+    }
+
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/home")
+    public String home(){
+        return "home";
+    }
+
+    @RequestMapping("/hello")
+    public String he(){
+        return "hello";
+    }
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
     }
 
 

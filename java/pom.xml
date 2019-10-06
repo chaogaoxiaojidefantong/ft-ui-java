@@ -15,6 +15,8 @@
         <module>generator</module>
         <module>zipkinService</module>
         <module>kafkaService</module>
+        <module>publicService</module>
+        <module>componentService</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -191,7 +193,7 @@
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
-            <version>1.4</version>
+            <version>1.4.7</version>
         </dependency>
         <dependency>
             <groupId>commons-httpclient</groupId>

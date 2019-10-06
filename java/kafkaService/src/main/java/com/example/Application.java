@@ -1,7 +1,6 @@
 package com.example;
 
 import com.common.Foo2;
-import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

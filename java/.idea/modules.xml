@@ -3,12 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/zuulService/ZuulService.iml" filepath="$PROJECT_DIR$/zuulService/ZuulService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/adminService/adminService.iml" filepath="$PROJECT_DIR$/adminService/adminService.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/componentService/componentService.iml" filepath="$PROJECT_DIR$/componentService/componentService.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaServcie/eurekaServcie.iml" filepath="$PROJECT_DIR$/eurekaServcie/eurekaServcie.iml" />
       <module fileurl="file://$PROJECT_DIR$/generator/generator.iml" filepath="$PROJECT_DIR$/generator/generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/java.iml" filepath="$PROJECT_DIR$/java.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafkaService/kafkaService.iml" filepath="$PROJECT_DIR$/kafkaService/kafkaService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publicService/publicService.iml" filepath="$PROJECT_DIR$/publicService/publicService.iml" />
       <module fileurl="file://$PROJECT_DIR$/zipkinService/zipkinService.iml" filepath="$PROJECT_DIR$/zipkinService/zipkinService.iml" />
     </modules>
   </component>
