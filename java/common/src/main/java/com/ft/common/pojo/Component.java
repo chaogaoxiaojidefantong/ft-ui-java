@@ -1,8 +1,9 @@
 package com.ft.common.pojo;
 
 public class Component {
-    private Integer id;
-    private String name;
+    private Integer id;//组件id
+    private String name;//组件英文名
+    private String chinaName;//组件中文名
 
     public Integer getId() {
         return id;
@@ -18,5 +19,13 @@ public class Component {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getChinaName() {
+        return chinaName;
+    }
+
+    public void setChinaName(String chinaName) {
+        this.chinaName = chinaName;
     }
 }

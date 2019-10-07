@@ -8,6 +8,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Zuul2Service/pom.xml" />
         <option value="$PROJECT_DIR$/adminService/pom.xml" />
       </set>
     </option>
