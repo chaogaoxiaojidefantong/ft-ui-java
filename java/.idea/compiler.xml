@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Zuul2Service" />
-        <module name="generator" />
+        <module name="ZuulService" />
         <module name="common" />
         <module name="zipkinService" />
         <module name="kafkaService" />
         <module name="eurekaServcie" />
         <module name="publicService" />
         <module name="componentService" />
-        <module name="ZuulService" />
+        <module name="generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
