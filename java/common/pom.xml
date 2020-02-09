@@ -110,5 +110,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+        <repository>
+            <id>ykz200-maven-repo</id>
+            <url>D:\javastudy\ftmaven</url>
+        </repository>
+    </distributionManagement>
 </project>

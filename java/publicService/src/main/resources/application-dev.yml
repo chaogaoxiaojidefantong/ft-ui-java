@@ -1,7 +1,5 @@
 spring:
   zipkin.base-url: http://localhost:9999
-  application:
-    name: publicService
   datasource:
     name:
     url: jdbc:mysql://localhost:3306/ft_ui?useUnicode=true&characterEncoding=UTF-8
@@ -54,7 +52,7 @@ eureka:
 #ribbon.eureka.enable: true
 file:
   dir: D:/mystudy/ft-ui-upload
-  url: http://image.ftui.com
+  url: http://localhost:801
 
 
 

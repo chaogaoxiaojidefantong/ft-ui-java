@@ -22,7 +22,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>eureka-10000</finalName>
+        <finalName>eureka-10001</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -34,5 +34,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

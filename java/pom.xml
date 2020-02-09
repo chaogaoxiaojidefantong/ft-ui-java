@@ -10,7 +10,6 @@
     <modules>
         <module>eurekaServcie</module>
         <module>ZuulService</module>
-        <module>adminService</module>
         <module>common</module>
         <module>generator</module>
         <module>zipkinService</module>
@@ -20,7 +19,6 @@
     </modules>
     <packaging>pom</packaging>
     <properties>
-
         <resource.delimiter>#</resource.delimiter><!--maven 动态切换 标记符-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -45,7 +43,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.6.RELEASE</version>
-        <!--<version>1.5.6.RELEASE</version>-->
     </parent>
 
     <!--最简化配置，继承模块只需添加相关依赖即可，该依赖包含所有依赖子模块-->
@@ -160,17 +157,6 @@
             <version>2.6</version>
         </dependency>
 
-        <!-- tx-client -->
-        <dependency>
-            <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-tc</artifactId>
-            <version>5.0.2.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-txmsg-netty</artifactId>
-            <version>5.0.2.RELEASE</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.kafka</groupId>
@@ -182,7 +168,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
-            <scope>true</scope>
+
         </dependency>
         <!-- 邮箱 -->
         <dependency>
@@ -209,7 +195,6 @@
             <properties>
                 <!--这个参数需要application.yml动态获取-->
                 <spring.profiles.active>dev</spring.profiles.active>
-                <!--<repackage.location>C:\Users\caolihua.KEXIN\Desktop\package</repackage.location>-->
             </properties>
         </profile>
         <!--生产环境-->
@@ -217,14 +202,12 @@
             <id>prod1</id>
             <properties>
                 <spring.profiles.active>prod1</spring.profiles.active>
-                <!--<repackage.location>C:\Users\caolihua.KEXIN\Desktop\package</repackage.location>-->
             </properties>
         </profile>
         <profile>
             <id>prod2</id>
             <properties>
                 <spring.profiles.active>prod2</spring.profiles.active>
-                <!--<repackage.location>C:\Users\caolihua.KEXIN\Desktop\package</repackage.location>-->
             </properties>
         </profile>
         <!--测试环境-->
@@ -232,7 +215,6 @@
             <id>test</id>
             <properties>
                 <spring.profiles.active>test</spring.profiles.active>
-                <!--<repackage.location>C:\Users\caolihua.KEXIN\Desktop\package</repackage.location>-->
             </properties>
         </profile>
 
@@ -244,10 +226,6 @@
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering> <!--ture表示里面的##标记的参数会被动态替换掉-->
             </resource>
-            <!--<resource>-->
-            <!--<directory>src/main/resources/application-${spring.profiles.active}.yml</directory>-->
-            <!--<filtering>false</filtering>-->
-            <!--</resource>-->
             <resource>
                 <directory>src/main/resources/</directory>
                 <filtering>false</filtering>

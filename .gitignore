@@ -1,0 +1,5 @@
+adminService/log/
+**/target/**
+*/target/**
+/.idea/**
+**.iml
