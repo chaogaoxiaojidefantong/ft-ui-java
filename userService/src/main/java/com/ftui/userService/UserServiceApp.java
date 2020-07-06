@@ -1,5 +1,4 @@
 package com.ftui.userService;
-
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,10 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.core.ProducerFactory;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
@@ -27,11 +24,14 @@ public class UserServiceApp implements CommandLineRunner {
     KafkaTemplate kafkaTemplate;
     private final CountDownLatch latch = new CountDownLatch(3);
 
+
+
     @Override
     public void run(String... args) throws Exception {
         kafkaTemplate.send("myTopic", "foo1");
         kafkaTemplate.send("myTopic", "foo2");
         kafkaTemplate.send("myTopic", "foo3");
+
         latch.await(60, TimeUnit.SECONDS);
         logger.info("All received");
     }

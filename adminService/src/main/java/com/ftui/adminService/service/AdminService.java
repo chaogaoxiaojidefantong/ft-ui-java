@@ -1,19 +1,24 @@
 package com.ftui.adminService.service;
 
 import com.ftui.common.vo.BiliResult;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AdminService {
-    @KafkaListener(topics = "mes",id = "myGroup")
-    public  void  listen(ConsumerRecord<?,String> record){
-        String value = record.value(); //value的值是你好
-        System.out.println(value);
-    }
+    @Autowired
+    RedisTemplate redisTemplate;
 
+    public void hello() {
+        ValueOperations ops = redisTemplate.opsForValue();
+        ops.set("k1", "v1");
+        Object k1 = ops.get("k1");
+        System.out.println(k1);
+    }
     public BiliResult getKa(){
+        hello();
         return BiliResult.oK();
     }
 }

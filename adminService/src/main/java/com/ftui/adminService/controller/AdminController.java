@@ -12,7 +12,7 @@ public class AdminController {
 
     @Autowired
     AdminService adminService;
-
+    @RequestMapping("/getKa")
     public BiliResult getKa(){
       return   adminService.getKa();
     }
