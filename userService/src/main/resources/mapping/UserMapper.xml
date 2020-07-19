@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ftui.userService.mapper.UserMapper" >
+   <resultMap id="userResultMap" type="User">
+       <id property="userId" column="user_id" />
+       <result property="userName" column="user_name"/>
+       <result property="userPwd" column="user_pwd"/>
+       <result property="userPhone" column="user_phone"/>
+       <result property="userEmail" column="user_email"/>
+       <result property="verifyCode" column="verify_code"/>
+       <result property="userStatus" column="user_status"/>
+       <result property="userSalt" column="user_salt"/>
+   </resultMap>
+   <sql id="userColumns">
+        ${alias}_salt,${alias}_phone,${alias}_email,${alias}_pwd,${alias}_status,${alias}_name
+   </sql>
+   <insert id="regist" parameterType="User">
+        insert into user(user_name,user_pwd,user_phone,user_email,verify_code,user_status,user_salt) values
+        (#{userName},#{userPwd},#{userPhone},#{userEmail},#{verifyCode},#{userStatus},#{userSalt})
+   </insert>
+    <select id="login"  parameterType="User" resultType="User">
+        select
+        <include refid="userColumns"><property name="alias" value="user"/></include>
+        from user
+        where user_pwd=#{userPwd} and user_phone=#{userPhone}
+    </select>
+    <select id="getSalt" resultType="String">
+        select user_salt from user where user_phone =#{userPhone}
+    </select>
+</mapper>

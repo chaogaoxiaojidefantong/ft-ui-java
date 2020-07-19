@@ -1,5 +1,6 @@
 package com.ftui.userService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-
+@MapperScan
 @SpringBootApplication
 @EnableEurekaClient
 public class UserServiceApp implements CommandLineRunner {
@@ -28,15 +29,14 @@ public class UserServiceApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        kafkaTemplate.send("myTopic", "foo1");
-        kafkaTemplate.send("myTopic", "foo2");
-        kafkaTemplate.send("myTopic", "foo3");
-
+        kafkaTemplate.send("myTopic1", "foo1");
+        kafkaTemplate.send("myTopic1", "foo2");
+        kafkaTemplate.send("myTopic1", "foo3");
         latch.await(60, TimeUnit.SECONDS);
         logger.info("All received");
     }
 
-    @KafkaListener(topics = "myTopic")
+    @KafkaListener(topics = "myTopic1")
     public void listen(ConsumerRecord<?, ?> cr) throws Exception {
         logger.info(cr.toString());
         latch.countDown();

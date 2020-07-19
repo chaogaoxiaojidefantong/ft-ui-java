@@ -1,19 +1,14 @@
 server:
   port: 10002
 spring:
-  kafka:
-    bootstrap-servers: 39.105.190.207:9092
-    producer:
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-    consumer:
-      auto-offset-reset: earliest
-      group-id: myGroup
   application:
     name: userService
-  redis:
-    host: localhost
-    port: 6379
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:10000/eureka/
+  profiles:
+    active: dev
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.ftui.common.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+    
+

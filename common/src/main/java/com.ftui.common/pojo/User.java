@@ -16,9 +16,7 @@ public class User {
 
     private String userName;
 
-    private Integer canteenId;
-
     private String verifyCode;
 
-    private Integer cartId;
+    private String userSalt;
 }
