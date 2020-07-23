@@ -3,11 +3,14 @@ package com.ftui.userService.service;
 import com.ftui.common.pojo.User;
 import com.ftui.common.util.PasswordUtil;
 import com.ftui.common.vo.BiliResult;
+import com.ftui.userService.jpa.Comment;
+import com.ftui.userService.jpa.CommentRepository;
 import com.ftui.userService.mapper.UserMapper;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.kafka.core.KafkaAdmin;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
@@ -27,6 +30,9 @@ public class UserService {
 
     @Autowired
     KafkaTemplate kafkaTemplate;
+
+    @Autowired
+    CommentRepository commentRepository;
 
     @Autowired
     private KafkaAdmin admin;
@@ -55,8 +61,10 @@ public class UserService {
         String pwd=PasswordUtil.getPwd(user.getUserPwd(),salt);
         user.setUserPwd(pwd);
         ArrayList<User> list=(ArrayList)userMapper.login(user);
-        User userRes=list.get(0);
-        return BiliResult.oK();
+        if(list.get(0)!=null){
+            return BiliResult.oK();
+        }
+       else return BiliResult.build(403,"用户名或密码不正确");
     }
 
 
@@ -64,6 +72,9 @@ public class UserService {
     public BiliResult sendMes(String mes){
         kafkaTemplate.send("myTopic1", mes);
         hello();
+        Comment comment=commentRepository.findById(1l);
+        List<Comment>list=commentRepository.findByContent("ccc");
+        System.out.println("zz");
     return  null;
     }
 

@@ -3,7 +3,12 @@ server:
 spring:
   application:
     name: adminService
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:10000/eureka/
+  profiles:
+    active: dev
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.ftui.common.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+
+
