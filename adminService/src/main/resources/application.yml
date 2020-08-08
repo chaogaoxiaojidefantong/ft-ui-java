@@ -1,5 +1,8 @@
 server:
   port: 10003
+  servlet:
+    context-path: /Admin
+  servletPath: /Admin
 spring:
   application:
     name: adminService
@@ -10,5 +13,8 @@ mybatis:
   type-aliases-package: com.ftui.common.pojo
   configuration:
     map-underscore-to-camel-case: true
+eureka:
+  instance:
+    statusPageUrlPath: ${server.servletPath}/info
 
 

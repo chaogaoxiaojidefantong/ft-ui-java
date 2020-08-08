@@ -3,13 +3,16 @@ package com.ftui.userService.controller;
 import com.ftui.common.pojo.User;
 import com.ftui.common.vo.BiliResult;
 import com.ftui.userService.service.UserService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/User")
 @RestController
 public class UserController {
 
@@ -18,6 +21,7 @@ public class UserController {
 
     @RequestMapping("/sayhello")
     public BiliResult sayHello(){
+        userService.hello();
         return BiliResult.oK("nihao");
     }
 
@@ -33,5 +37,10 @@ public class UserController {
     public BiliResult login(User user){
     return  userService.login(user);
     }
+    @PostMapping("sendMesToAdmin")
+    public BiliResult sendMesToAdmin(String mes){
+        return userService.sendMesToAdmin(mes);
+    }
+
 
 }

@@ -4,12 +4,16 @@ import com.ftui.common.vo.BiliResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AdminService {
     @Autowired
     RedisTemplate redisTemplate;
+
+    @Autowired
+    KafkaTemplate kafkaTemplate;
 
     public void hello() {
         ValueOperations ops = redisTemplate.opsForValue();
@@ -21,4 +25,5 @@ public class AdminService {
         hello();
         return BiliResult.oK();
     }
+
 }

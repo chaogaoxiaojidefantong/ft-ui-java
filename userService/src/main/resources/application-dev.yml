@@ -15,10 +15,6 @@ spring:
     consumer:
       auto-offset-reset: earliest
       group-id: myGroup
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
 eureka:
   client:
     serviceUrl:
