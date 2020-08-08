@@ -8,10 +8,7 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
@@ -26,7 +23,7 @@ public class UserController {
     }
 
     @RequestMapping("/sendMes")
-    public BiliResult sendMes(String mes){
+    public BiliResult sendMes(@RequestParam(required = true) String mes){
         return userService.sendMes(mes);
     }
     @PostMapping("/regist")
