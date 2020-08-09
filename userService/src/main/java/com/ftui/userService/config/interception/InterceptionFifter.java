@@ -1,4 +1,4 @@
-package com.ftui.userService.fifter.web;
+package com.ftui.userService.config.interception;
 
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
