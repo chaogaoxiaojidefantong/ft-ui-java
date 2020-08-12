@@ -25,4 +25,15 @@ public class UserTest {
         Map map2=(Map) ops.get("sansan");
         System.out.println(map2);
     }
+    @Test
+    public void test2(){
+        Penguin penguin=new Penguin();
+        String a=penguin.name;
+        System.out.println(a);
+
+    }
+
+    public void test3(){
+    }
+
 }

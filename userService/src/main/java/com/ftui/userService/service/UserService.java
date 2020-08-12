@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONPObject;
 import com.ftui.common.pojo.User;
 import com.ftui.common.util.PasswordUtil;
 import com.ftui.common.vo.BiliResult;
+import com.ftui.userService.config.exception.ContentNotAllowedException;
 import com.ftui.userService.jpa.Comment;
 import com.ftui.userService.jpa.CommentRepository;
 import com.ftui.userService.mapper.UserMapper;
@@ -84,6 +85,9 @@ public class UserService {
 
 
     public BiliResult sendMes(String mes){
+//        if (mes==null){
+//            throw  new ContentNotAllowedException();
+//        }
         kafkaTemplate.send("myTopic1", mes);
         hello();
         Comment comment=commentRepository.findById(1l);

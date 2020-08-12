@@ -1,4 +1,4 @@
-package com.ftui.userService.fifter;
+package com.ftui.userService.config.fifter;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
