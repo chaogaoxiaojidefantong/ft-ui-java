@@ -1,14 +1,10 @@
 package com.ftui.userService.service;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.JSONPObject;
 import com.ftui.common.pojo.User;
 import com.ftui.common.util.PasswordUtil;
 import com.ftui.common.vo.BiliResult;
-import com.ftui.userService.config.exception.ContentNotAllowedException;
 import com.ftui.userService.jpa.Comment;
 import com.ftui.userService.jpa.CommentRepository;
 import com.ftui.userService.mapper.UserMapper;
-import org.apache.kafka.clients.admin.AdminClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;

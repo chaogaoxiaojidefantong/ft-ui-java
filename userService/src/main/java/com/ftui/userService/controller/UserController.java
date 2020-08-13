@@ -2,6 +2,7 @@ package com.ftui.userService.controller;
 
 import com.ftui.common.pojo.User;
 import com.ftui.common.vo.BiliResult;
+import com.ftui.userService.config.aop.SysLog;
 import com.ftui.userService.config.exception.SystemException;
 import com.ftui.userService.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
@@ -19,6 +20,7 @@ public class UserController {
     UserService userService;
 
     @RequestMapping("/sayhello")
+    @SysLog("测试")
     public BiliResult sayHello(){
         userService.hello();
         return BiliResult.oK("nihao");
