@@ -8,7 +8,6 @@ import java.util.List;
 @Repository
 public interface UserMapper {
     public void  regist(User user);
-
     /**
      * 登录
      * @param user
@@ -20,4 +19,5 @@ public interface UserMapper {
      * @param userPhone
      */
     public List<String> getSalt(String userPhone);
+
 }

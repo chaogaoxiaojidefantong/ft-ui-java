@@ -19,4 +19,8 @@ public class User {
     private String verifyCode;
 
     private String userSalt;
+
+    public String getUserName() {
+        return userName;
+    }
 }

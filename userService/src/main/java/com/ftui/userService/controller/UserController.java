@@ -5,13 +5,10 @@ import com.ftui.common.vo.BiliResult;
 import com.ftui.userService.config.aop.SysLog;
 import com.ftui.userService.config.exception.SystemException;
 import com.ftui.userService.service.UserService;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-import org.apache.http.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 public class UserController {
@@ -48,5 +45,14 @@ public class UserController {
         return userService.sendMesToAdmin(mes);
     }
 
+    @PostMapping("/checkoutToken")
+    public BiliResult checkTokenTest(String  token){
+       return userService.checkTokenTest(token);
+    }
+
+    @GetMapping("/getUserByToken")
+    public BiliResult getUserByToken(HttpServletRequest request){
+        return  userService.getUserByToken(request);
+    }
 
 }

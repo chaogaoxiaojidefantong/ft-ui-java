@@ -10,6 +10,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.net.UnknownHostException;
 
@@ -18,13 +19,14 @@ import java.net.UnknownHostException;
 @EnableConfigurationProperties(RedisProperties.class)
 public class RedisConfig {
     @Bean
-    @ConditionalOnMissingBean(name = "redisTemplate")
     public RedisTemplate<Object, Object> redisTemplate(
             RedisConnectionFactory redisConnectionFactory) throws UnknownHostException {
         RedisTemplate<Object, Object> template = new RedisTemplate<>();
+        template.setHashValueSerializer(new StringRedisSerializer());
         template.setConnectionFactory(redisConnectionFactory);
         return template;
     }
+
     @Bean
     @ConditionalOnMissingBean
     public StringRedisTemplate stringRedisTemplate(
