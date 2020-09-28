@@ -20,3 +20,11 @@ security:
   user:
     name: ylw
     password: ylw1997
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: G:/code/ft-ui-java/eurekaService/src/main/resources/log
+  #  path: /var/log/java/school
+  pattern:
+    console: "%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n"
+    file: "%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n"

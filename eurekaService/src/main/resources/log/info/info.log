@@ -1,0 +1,192 @@
+2020-九月-28 18:09:39.165 INFO  [main] c.f.e.EurekaServiceApp - No active profile set, falling back to default profiles: default
+2020-九月-28 18:09:40.126 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:09:40.126 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2020-九月-28 18:09:40.126 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-九月-28 18:09:40.214 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-九月-28 18:09:40.320 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:09:40.327 INFO  [main] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@577536e0
+2020-九月-28 18:09:40.555 INFO  [main] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-九月-28 18:09:40.601 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:09:40.601 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:09:40.680 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:09:40.681 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:09:40.947 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:09:41.492 INFO  [main] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-九月-28 18:09:41.492 INFO  [main] c.n.d.DiscoveryClient - Client configured to neither register nor query for data.
+2020-九月-28 18:09:41.497 INFO  [main] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1601287781496 with initial instances count: 0
+2020-九月-28 18:09:41.521 INFO  [main] c.n.e.DefaultEurekaServerContext - Initializing ...
+2020-九月-28 18:09:41.523 INFO  [main] c.n.e.c.PeerEurekaNodes - Adding new peer nodes [http://localhost:10000/eureka/]
+2020-九月-28 18:09:41.695 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:09:41.696 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:09:41.696 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:09:41.696 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:09:41.796 INFO  [main] c.n.e.c.PeerEurekaNodes - Replica node URL:  http://localhost:10000/eureka/
+2020-九月-28 18:09:41.803 INFO  [main] c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2020-九月-28 18:09:41.804 INFO  [main] c.n.e.DefaultEurekaServerContext - Initialized
+2020-九月-28 18:09:41.884 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:09:41.891 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2020-九月-28 18:09:41.892 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2020-九月-28 18:09:41.892 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2020-九月-28 18:09:42.319 INFO  [main] c.f.e.EurekaServiceApp - Started EurekaServiceApp in 3.974 seconds (JVM running for 4.499)
+2020-九月-28 18:09:42.531 INFO  [RMI TCP Connection(1)-172.20.22.8] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-九月-28 18:10:08.960 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shutting down ...
+2020-九月-28 18:10:08.971 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shut down
+2020-九月-28 18:10:08.975 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-九月-28 18:10:08.976 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-九月-28 18:10:11.735 INFO  [main] c.f.e.EurekaServiceApp - No active profile set, falling back to default profiles: default
+2020-九月-28 18:10:12.669 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:10:12.670 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2020-九月-28 18:10:12.670 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-九月-28 18:10:12.750 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-九月-28 18:10:12.858 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:10:12.866 INFO  [main] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@588545ac
+2020-九月-28 18:10:13.093 INFO  [main] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-九月-28 18:10:13.138 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:10:13.138 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:10:13.218 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:10:13.218 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:10:13.494 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:10:14.094 INFO  [main] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-九月-28 18:10:14.095 INFO  [main] c.n.d.DiscoveryClient - Client configured to neither register nor query for data.
+2020-九月-28 18:10:14.100 INFO  [main] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1601287814099 with initial instances count: 0
+2020-九月-28 18:10:14.124 INFO  [main] c.n.e.DefaultEurekaServerContext - Initializing ...
+2020-九月-28 18:10:14.126 INFO  [main] c.n.e.c.PeerEurekaNodes - Adding new peer nodes [http://localhost:10000/eureka/]
+2020-九月-28 18:10:14.300 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:10:14.300 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:10:14.300 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:10:14.300 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:10:14.398 INFO  [main] c.n.e.c.PeerEurekaNodes - Replica node URL:  http://localhost:10000/eureka/
+2020-九月-28 18:10:14.403 INFO  [main] c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2020-九月-28 18:10:14.404 INFO  [main] c.n.e.DefaultEurekaServerContext - Initialized
+2020-九月-28 18:10:14.461 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:10:14.470 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2020-九月-28 18:10:14.470 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2020-九月-28 18:10:14.470 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2020-九月-28 18:10:14.900 INFO  [main] c.f.e.EurekaServiceApp - Started EurekaServiceApp in 3.951 seconds (JVM running for 4.478)
+2020-九月-28 18:10:15.146 INFO  [RMI TCP Connection(3)-172.20.22.8] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-九月-28 18:11:14.471 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:12:14.471 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:12:43.985 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shutting down ...
+2020-九月-28 18:12:43.996 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shut down
+2020-九月-28 18:12:44.001 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-九月-28 18:12:44.001 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-九月-28 18:12:47.888 INFO  [main] c.f.e.EurekaServiceApp - No active profile set, falling back to default profiles: default
+2020-九月-28 18:12:48.821 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:12:48.822 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2020-九月-28 18:12:48.822 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-九月-28 18:12:48.910 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-九月-28 18:12:48.996 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:12:49.004 INFO  [main] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1578b8ec
+2020-九月-28 18:12:49.242 INFO  [main] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-九月-28 18:12:49.288 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:12:49.288 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:12:49.364 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:12:49.364 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:12:49.631 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:12:50.202 INFO  [main] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-九月-28 18:12:50.202 INFO  [main] c.n.d.DiscoveryClient - Client configured to neither register nor query for data.
+2020-九月-28 18:12:50.207 INFO  [main] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1601287970206 with initial instances count: 0
+2020-九月-28 18:12:50.231 INFO  [main] c.n.e.DefaultEurekaServerContext - Initializing ...
+2020-九月-28 18:12:50.232 INFO  [main] c.n.e.c.PeerEurekaNodes - Adding new peer nodes [http://localhost:10000/eureka/]
+2020-九月-28 18:12:50.405 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:12:50.405 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:12:50.405 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:12:50.405 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:12:50.504 INFO  [main] c.n.e.c.PeerEurekaNodes - Replica node URL:  http://localhost:10000/eureka/
+2020-九月-28 18:12:50.509 INFO  [main] c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2020-九月-28 18:12:50.510 INFO  [main] c.n.e.DefaultEurekaServerContext - Initialized
+2020-九月-28 18:12:50.571 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:12:50.579 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2020-九月-28 18:12:50.579 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2020-九月-28 18:12:50.580 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2020-九月-28 18:12:51.025 INFO  [main] c.f.e.EurekaServiceApp - Started EurekaServiceApp in 3.953 seconds (JVM running for 4.497)
+2020-九月-28 18:12:51.246 INFO  [RMI TCP Connection(3)-172.20.22.8] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-九月-28 18:13:50.580 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:14:10.943 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shutting down ...
+2020-九月-28 18:14:10.953 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shut down
+2020-九月-28 18:14:10.959 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-九月-28 18:14:10.959 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-九月-28 18:14:14.004 INFO  [main] c.f.e.EurekaServiceApp - No active profile set, falling back to default profiles: default
+2020-九月-28 18:14:14.937 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:14:14.938 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2020-九月-28 18:14:14.938 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-九月-28 18:14:15.034 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-九月-28 18:14:15.086 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:14:15.128 INFO  [main] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2c0c4c0a
+2020-九月-28 18:14:15.362 INFO  [main] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-九月-28 18:14:15.407 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:14:15.407 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:14:15.483 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:14:15.484 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:14:15.751 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:14:16.302 INFO  [main] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-九月-28 18:14:16.302 INFO  [main] c.n.d.DiscoveryClient - Client configured to neither register nor query for data.
+2020-九月-28 18:14:16.307 INFO  [main] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1601288056306 with initial instances count: 0
+2020-九月-28 18:14:16.331 INFO  [main] c.n.e.DefaultEurekaServerContext - Initializing ...
+2020-九月-28 18:14:16.332 INFO  [main] c.n.e.c.PeerEurekaNodes - Adding new peer nodes [http://localhost:10000/eureka/]
+2020-九月-28 18:14:16.528 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:14:16.529 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:14:16.529 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:14:16.529 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:14:16.636 INFO  [main] c.n.e.c.PeerEurekaNodes - Replica node URL:  http://localhost:10000/eureka/
+2020-九月-28 18:14:16.642 INFO  [main] c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2020-九月-28 18:14:16.643 INFO  [main] c.n.e.DefaultEurekaServerContext - Initialized
+2020-九月-28 18:14:16.704 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:14:16.711 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2020-九月-28 18:14:16.711 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2020-九月-28 18:14:16.711 INFO  [Thread-406] c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2020-九月-28 18:14:17.145 INFO  [main] c.f.e.EurekaServiceApp - Started EurekaServiceApp in 3.942 seconds (JVM running for 4.47)
+2020-九月-28 18:14:17.441 INFO  [RMI TCP Connection(2)-172.20.22.8] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-九月-28 18:15:16.711 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:16:16.712 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:17:03.230 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shutting down ...
+2020-九月-28 18:17:03.241 INFO  [SpringContextShutdownHook] c.n.e.DefaultEurekaServerContext - Shut down
+2020-九月-28 18:17:03.246 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-九月-28 18:17:03.247 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-九月-28 18:17:07.336 INFO  [main] c.f.e.EurekaServiceApp - No active profile set, falling back to default profiles: default
+2020-九月-28 18:17:08.312 INFO  [main] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:17:08.313 INFO  [main] o.a.c.c.StandardService - Starting service [Tomcat]
+2020-九月-28 18:17:08.313 INFO  [main] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-九月-28 18:17:08.397 INFO  [main] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2020-九月-28 18:17:08.451 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:17:08.512 INFO  [main] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a32191e
+2020-九月-28 18:17:08.767 INFO  [main] c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-九月-28 18:17:08.814 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:17:08.814 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:17:08.891 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:17:08.892 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:17:09.162 INFO  [main] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-九月-28 18:17:09.731 INFO  [main] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-九月-28 18:17:09.731 INFO  [main] c.n.d.DiscoveryClient - Client configured to neither register nor query for data.
+2020-九月-28 18:17:09.736 INFO  [main] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1601288229735 with initial instances count: 0
+2020-九月-28 18:17:09.765 INFO  [main] c.n.e.DefaultEurekaServerContext - Initializing ...
+2020-九月-28 18:17:09.767 INFO  [main] c.n.e.c.PeerEurekaNodes - Adding new peer nodes [http://localhost:10000/eureka/]
+2020-九月-28 18:17:09.944 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-九月-28 18:17:09.945 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-九月-28 18:17:09.945 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-九月-28 18:17:09.945 INFO  [main] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-九月-28 18:17:10.047 INFO  [main] c.n.e.c.PeerEurekaNodes - Replica node URL:  http://localhost:10000/eureka/
+2020-九月-28 18:17:10.052 INFO  [main] c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2020-九月-28 18:17:10.053 INFO  [main] c.n.e.DefaultEurekaServerContext - Initialized
+2020-九月-28 18:17:10.118 INFO  [main] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-10000"]
+2020-九月-28 18:17:10.126 INFO  [Thread-407] c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2020-九月-28 18:17:10.126 INFO  [Thread-407] c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2020-九月-28 18:17:10.126 INFO  [Thread-407] c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2020-九月-28 18:17:10.569 INFO  [main] c.f.e.EurekaServiceApp - Started EurekaServiceApp in 4.097 seconds (JVM running for 4.636)
+2020-九月-28 18:17:10.687 INFO  [RMI TCP Connection(4)-172.20.22.8] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-九月-28 18:18:10.128 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:19:10.129 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:20:10.129 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:21:10.130 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:22:10.130 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:23:10.131 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:24:10.132 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:25:10.132 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:26:10.133 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:27:10.134 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:28:10.134 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:29:10.134 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:30:10.135 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2020-九月-28 18:31:10.136 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2020-九月-28 18:32:10.052 INFO  [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 1
+2020-九月-28 18:32:10.138 INFO  [Eureka-EvictionTimer] c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
